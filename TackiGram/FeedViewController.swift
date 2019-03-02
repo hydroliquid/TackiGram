@@ -21,8 +21,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         let query = PFQuery(className: "Posts")
         query.includeKey("author")
