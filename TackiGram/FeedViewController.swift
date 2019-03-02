@@ -11,8 +11,6 @@ import Parse
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var myTableView: UITableView!
-    @IBOutlet weak var userNameLabel: UILabel!
-    @IBOutlet weak var commentLabel: UILabel!
     
     var posts = [PFObject]()
     
@@ -49,11 +47,13 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let post = posts[indexPath.row]
         
         let user = post["author"] as! PFUser
-        cell.userNameLabel.text = post["caption"] as! String
+        cell.userNameLabel.text = user.username
         
-        cell.commentLabel.text = post["caption"] as? PFFileObject
+        cell.commentLabel.text = post["caption"] as? String
         
         
+        
+        return cell
     }
     
 
