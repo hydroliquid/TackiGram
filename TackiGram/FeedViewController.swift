@@ -44,14 +44,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = myTableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
+        let cell = myTableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostTableViewCell
         
         let post = posts[indexPath.row]
         
         let user = post["author"] as! PFUser
         cell.userNameLabel.text = post["caption"] as! String
         
-        cell.commentLabel.text = post["caption"] as! PFFileObject
+        cell.commentLabel.text = post["caption"] as? PFFileObject
         
         
     }
