@@ -1,0 +1,6 @@
+framework module Pods_TackiGram {
+  umbrella header "Pods-TackiGram-umbrella.h"
+
+  export *
+  module * { export * }
+}
