@@ -51,7 +51,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         cell.commentLabel.text = post["caption"] as? String
         
+        let imageFile = post["image"] as! PFFileObject
+        let urlString = imageFile.url!
+        let url = URL(string: urlString)!
         
+        cell.photoView.af_setImage(withURL: url)
         
         return cell
     }

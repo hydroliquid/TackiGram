@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Parse.initialize(
                 with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
                     configuration.applicationId = "tackigram"
-                    configuration.server = "https://tackigram.herokuapp.com/parse"
+                    configuration.server = "https://shielded-retreat-20445.herokuapp.com/parse"
                 })
             )
         return true

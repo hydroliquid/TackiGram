@@ -34,7 +34,7 @@ class LoginViewController: UIViewController {
         }
     }
     
-        func OnLogIn(_ sender: Any) {
+       @IBAction func OnLogIn(_ sender: Any) {
             let username = userNameField.text!
             let password = passwordField.text!
             
