@@ -8,6 +8,8 @@ target 'TackiGram' do
   # Pods for TackiGram
   pod 'Parse'
   pod 'AlamofireImage'
+  pod 'MessageInputBar'
+
   target 'TackiGramTests' do
     inherit! :search_paths
     # Pods for testing

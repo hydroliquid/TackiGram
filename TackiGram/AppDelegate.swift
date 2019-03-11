@@ -23,6 +23,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     configuration.server = "https://shielded-retreat-20445.herokuapp.com/parse"
                 })
             )
+        if PFUser.current() != nil {
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let feedNavController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+            
+            window?.rootViewController = feedNavController
+        }
+        
         return true
     }
 

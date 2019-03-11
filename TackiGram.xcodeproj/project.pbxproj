@@ -18,6 +18,7 @@
 		4BE2569F222A62A10085D149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BE2569D222A62A10085D149 /* LaunchScreen.storyboard */; };
 		4BE256AA222A62A10085D149 /* TackiGramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE256A9222A62A10085D149 /* TackiGramTests.swift */; };
 		4BE256B5222A62A10085D149 /* TackiGramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE256B4222A62A10085D149 /* TackiGramUITests.swift */; };
+		4BEB25E12235EA3C0032E33A /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEB25E02235EA3C0032E33A /* CommentCell.swift */; };
 		9EEC451A483043F5E693447B /* Pods_TackiGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F0D6BB54FF56DD1DA70F05 /* Pods_TackiGram.framework */; };
 		D39C53447743F8BBAE970B71 /* Pods_TackiGramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F855760BD96A15E930378995 /* Pods_TackiGramTests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		4BE256B0222A62A10085D149 /* TackiGramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TackiGramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE256B4222A62A10085D149 /* TackiGramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TackiGramUITests.swift; sourceTree = "<group>"; };
 		4BE256B6222A62A10085D149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BEB25E02235EA3C0032E33A /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		5C7E4A622AC0473761AAD573 /* Pods-TackiGramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TackiGramUITests.debug.xcconfig"; path = "Target Support Files/Pods-TackiGramUITests/Pods-TackiGramUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		67B1064C8722E46E83C4D951 /* Pods-TackiGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TackiGram.debug.xcconfig"; path = "Target Support Files/Pods-TackiGram/Pods-TackiGram.debug.xcconfig"; sourceTree = "<group>"; };
 		8B3E843897BFA4720D5B9E1E /* Pods_TackiGramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TackiGramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +131,7 @@
 				4B7B08A3222A6ED3008B0818 /* FeedViewController.swift */,
 				4B7B08A5222B089A008B0818 /* CameraViewController.swift */,
 				4B7B08A7222B146A008B0818 /* PostTableViewCell.swift */,
+				4BEB25E02235EA3C0032E33A /* CommentCell.swift */,
 			);
 			path = TackiGram;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageInputBar/MessageInputBar.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -326,6 +330,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageInputBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +416,7 @@
 				4B7B08A8222B146A008B0818 /* PostTableViewCell.swift in Sources */,
 				4B7B08A4222A6ED3008B0818 /* FeedViewController.swift in Sources */,
 				4BE25695222A629F0085D149 /* AppDelegate.swift in Sources */,
+				4BEB25E12235EA3C0032E33A /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
